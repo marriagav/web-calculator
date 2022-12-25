@@ -3,8 +3,8 @@ class Calculator {
     this.operationsMap = {
       "+": this.add,
       "-": this.substract,
-      "*": this.multiply,
-      "/": this.divide,
+      "×": this.multiply,
+      "÷": this.divide,
     };
   }
   add(x, y) {

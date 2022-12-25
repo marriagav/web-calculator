@@ -1,6 +1,6 @@
 class Keypad {
-  constructor(document) {
-    this.calculator = document.querySelector(".calculator");
+  constructor(document, logicCalculator) {
+    this.uiCalculator = document.querySelector(".calculator");
     this.keyMapping = [
       "7",
       "8",
@@ -19,6 +19,7 @@ class Keypad {
       "=",
       "+",
     ];
+    this.logicCalculator = logicCalculator;
     this.buildKeypad();
   }
   buildKeypad() {
@@ -34,7 +35,7 @@ class Keypad {
         row.appendChild(button);
         i++;
       }
-      this.calculator.appendChild(row);
+      this.uiCalculator.appendChild(row);
     }
   }
 }
