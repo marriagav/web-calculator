@@ -8,16 +8,16 @@ class Calculator {
     };
   }
   add(x, y) {
-    return x + y;
+    return parseInt(x) + parseInt(y);
   }
   substract(x, y) {
-    return x - y;
+    return parseInt(x) - parseInt(y);
   }
   multiply(x, y) {
-    return x * y;
+    return parseInt(x) * parseInt(y);
   }
   divide(x, y) {
-    return x / y;
+    return parseInt(x) / parseInt(y);
   }
   operate(operator, x, y) {
     return this.operationsMap[operator](x, y);
