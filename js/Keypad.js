@@ -82,7 +82,10 @@ class Keypad {
   }
 
   operate(e, operator) {
-    if (this.justOperated && this.lastOperator != "=") {
+    if (
+      (this.justOperated && this.lastOperator != "=") ||
+      (this.justOperated && operator == "=")
+    ) {
       return;
     }
     this.lastOperator = operator;

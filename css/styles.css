@@ -71,7 +71,7 @@ main {
   border: 2px solid #36382e;
   color: #36382e;
   background-color: #ede6e3;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 5px;
   padding: 2px;
   padding-bottom: 20px;
@@ -80,6 +80,9 @@ main {
   height: 90%;
   font-size: 50px;
   margin-bottom: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+  text-align: right;
 }
 
 .output-last,
